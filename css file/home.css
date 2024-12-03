@@ -1,0 +1,14 @@
+/*Promo Bar*/
+.promo_bar {
+  background-color: var(--highlight-color);
+  color: white;
+  height: 26px;
+  font-size: 14px;
+}
+.time_left p {
+  font-weight: 700;
+}
+.time_left span {
+  font-size: 10px;
+  margin: 5px;
+}
