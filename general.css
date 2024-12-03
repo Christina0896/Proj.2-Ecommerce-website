@@ -7,8 +7,33 @@
   --base-color: rgba(255, 255, 255, 1);
   --highlight-color: rgba(99, 76, 159, 1);
   --text-color-1: black;
-  --text-color-1: rgba(107, 114, 128, 1);
+  --text-color-2: rgba(107, 114, 128, 1);
 }
 body {
   background-color: var(--base-color);
+}
+
+#theme_switch svg {
+  display: flex;
+  background-color: var(--base-color);
+}
+#theme_switch svg:last-child {
+  display: none;
+}
+.dark_mode #theme_switch svg:first-child {
+  display: none;
+}
+.dark_mode #theme_switch svg:last-child {
+  display: block;
+}
+.dark_mode {
+  --base-color: #070b1d;
+  --highlight-color: rgba(99, 76, 159, 1);
+  --text-color-1: black;
+  --text-color-2: white;
+}
+select {
+  border: 0;
+  background-color: transparent;
+  font-weight: 500;
 }

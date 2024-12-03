@@ -12,3 +12,16 @@
   font-size: 10px;
   margin: 5px;
 }
+/*Info bar*/
+.info_bar {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-color-2);
+  border-bottom: 1px solid rgba(229, 231, 235, 1);
+}
+.info_bar a {
+  color: var(--text-color-2);
+}
+.info_bar select {
+  color: var(--text-color-2);
+}
