@@ -25,3 +25,25 @@
 .info_bar select {
   color: var(--text-color-2);
 }
+
+/*Nav Bar*/
+.logo {
+  width: 5%;
+}
+
+.delivery,
+.account {
+  font-size: 13px;
+}
+.sign_in {
+  font-size: 11px;
+}
+.delivery img,
+.sign_in img {
+  width: 30px;
+}
+
+/*Search bar*/
+.search_bar {
+  flex: 1;
+}
