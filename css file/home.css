@@ -47,3 +47,34 @@
 .search_bar {
   flex: 1;
 }
+
+/*Side bar*/
+.dropdown_container {
+  width: 283px;
+}
+.dropdown_container a,
+.home_bar a {
+  color: var(--text-color-1);
+  font-weight: 600;
+}
+.dropdown {
+  display: flex;
+  height: 40px;
+  font-size: 15px;
+
+  border: 1px solid #dddddd;
+  border-radius: 8px 8px 0px 0px;
+}
+.dropdown-menu {
+  width: 268px;
+  border-radius: 0px;
+  border: 1px solid #dddddd;
+}
+.dropdown-menu li {
+  border: 1px solid #dddddd94;
+  padding: 8px;
+  font-weight: 400;
+}
+.sale a {
+  margin-left: 22em;
+}
