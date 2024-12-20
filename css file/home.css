@@ -2,8 +2,8 @@
 .promo_bar {
   background-color: var(--highlight-color);
   color: white;
-  height: 26px;
-  font-size: 14px;
+  height: 31px;
+  font-size: 15px;
 }
 .time_left p {
   font-weight: 700;
@@ -19,16 +19,14 @@
   color: var(--text-color-2);
   border-bottom: 1px solid rgba(229, 231, 235, 1);
 }
-.info_bar a {
-  color: var(--text-color-2);
-}
+.info_bar a,
 .info_bar select {
   color: var(--text-color-2);
 }
 
 /*Nav Bar*/
 .logo {
-  width: 5%;
+  width: 3%;
 }
 
 .delivery,
@@ -38,43 +36,96 @@
 .sign_in {
   font-size: 11px;
 }
-.delivery img,
-.sign_in img {
-  width: 30px;
-}
 
 /*Search bar*/
-.search_bar {
-  flex: 1;
+.search_bar input {
+  background-color: rgba(243, 244, 246, 1);
+  border-radius: 8px 0 0 8px;
 }
-
+.search_bar button {
+  background-color: rgba(243, 244, 246, 1);
+  border-radius: 0 8px 8px 0;
+  border: 1px solid #dddddd;
+}
 /*Side bar*/
-.dropdown_container {
-  width: 283px;
+.home_bar {
+  border-bottom: 1px solid rgba(229, 231, 235, 1);
 }
-.dropdown_container a,
-.home_bar a {
+.home_bar a,
+.cat_list li {
   color: var(--text-color-1);
   font-weight: 600;
 }
-.dropdown {
-  display: flex;
-  height: 40px;
-  font-size: 15px;
-
-  border: 1px solid #dddddd;
-  border-radius: 8px 8px 0px 0px;
-}
-.dropdown-menu {
-  width: 268px;
-  border-radius: 0px;
-  border: 1px solid #dddddd;
-}
-.dropdown-menu li {
-  border: 1px solid #dddddd94;
-  padding: 8px;
-  font-weight: 400;
+.all_cat {
+  border: 1px solid rgba(229, 231, 235, 1);
+  border-bottom: none;
+  height: 2.6em;
+  width: 16em;
+  border-radius: 8px 0 0;
 }
 .sale a {
-  margin-left: 22em;
+  margin-left: 24em;
+}
+.cat_list li {
+  border: 1px solid rgba(229, 231, 235, 1);
+  height: 3em;
+  width: 16rem;
+  font-size: 15px;
+}
+.hero_img img {
+  border-radius: 6px;
+  width: 100%;
+  height: 97%;
+}
+.text_hero {
+  color: rgba(57, 36, 95, 1);
+}
+.text_hero p {
+  color: rgba(22, 101, 52, 1);
+  font-weight: 500;
+  font-size: 13px;
+  width: 10em;
+  height: 1.8em;
+  padding-left: 10px;
+  background: linear-gradient(
+    to right,
+    rgba(22, 163, 74, 0.5),
+    rgba(34, 197, 94, 0)
+  );
+  border-radius: 5px;
+}
+.text_hero h1 {
+  font-weight: bold;
+}
+
+.text_hero h6 {
+  color: var(--text-color-1);
+  font-weight: 400;
+}
+.shop_nowbtn {
+  color: var(--base-color);
+  background-color: var(--highlight-color);
+  border: none;
+  border-radius: 8px;
+  width: 8em;
+  height: 3em;
+}
+.mini_text {
+  font-size: 11px;
+  color: var(--text-color-1);
+  font-weight: 400;
+}
+.new_price {
+  color: red;
+  font-weight: 600;
+}
+.old_price {
+  color: var(--text-color-1);
+  font-size: 17px;
+}
+.dropdown_arrow {
+  margin-left: 6em;
+}
+.dropdown-toggle::after {
+  display: none !important; /* Hides the default Bootstrap dropdown arrow */
 }
