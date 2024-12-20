@@ -51,11 +51,53 @@
 .home_bar {
   border-bottom: 1px solid rgba(229, 231, 235, 1);
 }
-.home_bar a,
+
 .cat_list li {
   color: var(--text-color-1);
   font-weight: 400;
 }
+.home_navbar a {
+  position: relative;
+  color: var(--text-color-1);
+  font-weight: 500;
+}
+.home_navbar a:after {
+  content: "";
+  position: absolute;
+  background-color: var(--highlight-color);
+  height: 2px;
+  border-radius: 10px;
+  width: 0%;
+  top: 2.6em;
+  right: 1px;
+}
+.home_navbar a:hover {
+  color: var(--highlight-color);
+}
+.home_navbar a:hover::after {
+  width: 100%;
+  color: var(--highlight-color);
+}
+.home_navbar a.active {
+  color: var(--highlight-color);
+}
+.home_navbar a.active::after {
+  width: 100%;
+}
+/* Special hover styling for 'Almost Finished' */
+.home_navbar a.sale {
+  color: red; /* Default color for special link */
+}
+
+.home_navbar a.sale::after {
+  background-color: red; /* Underline default color for special link */
+}
+
+.home_navbar a.sale:hover::after {
+  background-color: red; /* Underline hover color for special link */
+  width: 100%; /* Full underline width */
+}
+
 .all_cat {
   border: 1px solid rgba(229, 231, 235, 1);
   border-bottom: none;
@@ -63,8 +105,8 @@
   width: 16em;
   border-radius: 8px 0 0;
 }
-.sale a {
-  margin-left: 24em;
+.sale {
+  margin-left: 23em;
 }
 .cat_list li {
   border: 1px solid rgba(229, 231, 235, 1);
