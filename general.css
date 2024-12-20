@@ -13,17 +13,17 @@ body {
   background-color: var(--base-color);
 }
 
-#theme_switch svg {
+#theme_switch img {
   display: flex;
   background-color: var(--base-color);
 }
-#theme_switch svg:last-child {
+#theme_switch img:last-child {
   display: none;
 }
-.dark_mode #theme_switch svg:first-child {
+.dark_mode #theme_switch img:first-child {
   display: none;
 }
-.dark_mode #theme_switch svg:last-child {
+.dark_mode #theme_switch img:last-child {
   display: block;
 }
 .dark_mode {

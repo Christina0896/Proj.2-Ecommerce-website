@@ -28,6 +28,7 @@
       <p>
         FREE delivery & 40% Discount for next 3 orders! Place your 1st order in.
       </p>
+
       <p class="ms-5">Until the end of the sale:</p>
       <div class="time_left d-flex mx-2">
         <div class="d-flex">
@@ -52,6 +53,7 @@
       <!--Info bar-->
       <div class="info_bar d-flex gap-4 mt-1 mb-0">
         <a href="" class="text-decoration-none">About Us</a>
+        <a href="" class="text-decoration-none"> Track order</a>
         <p class="mb-0">
           We delivery every day from
           <span class="text-danger fw-bold">07:00 to 20:00</span>
@@ -68,36 +70,238 @@
           </select>
         </div>
         <button id="theme_switch" class="border-0">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="24px"
-            viewBox="0 -960 960 960"
-            width="24px"
-            fill="#5f6368"
-          >
-            <path
-              d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Zm-10-270Z"
-            />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            height="24px"
-            viewBox="0 -960 960 960"
-            width="24px"
-            fill="#F9DB78"
-          >
-            <path
-              d="M480-280q-83 0-141.5-58.5T280-480q0-83 58.5-141.5T480-680q83 0 141.5 58.5T680-480q0 83-58.5 141.5T480-280ZM200-440H40v-80h160v80Zm720 0H760v-80h160v80ZM440-760v-160h80v160h-80Zm0 720v-160h80v160h-80ZM256-650l-101-97 57-59 96 100-52 56Zm492 496-97-101 53-55 101 97-57 59Zm-98-550 97-101 59 57-100 96-56-52ZM154-212l101-97 55 53-97 101-59-57Z"
-            />
-          </svg>
+          <img src="icons/dark mode_moon.svg" alt="dark mode" />
+
+          <img src="icons/light mode.svg" alt="light mode" />
         </button>
       </div>
+
       <!--Navigation bar- The logo, search bar,account ...-->
+      <nav class="navbar p-0 navbar-expand">
+        <!-- Logo -->
+        <img class="logo" src="images/logo.png" alt="Logo" />
+        <h4>TinaStore</h4>
+        <!--Nav link left side-->
+        <a class="delivery nav-link d-flex ms-4" href="#">
+          <img src="icons/location.svg" alt="Location Icon" />
+          <p class="mt-4 ms-1 me-4">
+            Deliver to <br />
+            <span class="text-dark fw-bold">All</span>
+          </p>
+        </a>
+
+        <!--Search bar-->
+        <div class="search_bar d-flex flex-grow-1 mx-3">
+          <input
+            class="form-control p-0"
+            type="search"
+            placeholder="   Search for products, categories or brands..."
+            aria-label="Search"
+          />
+          <button class="btn p-2 m-0">
+            <img src="icons/search.svg" alt="search" />
+          </button>
+        </div>
+
+        <!--Nav links right side-->
+
+        <ul class="nav d-flex align-items-center">
+          <!-- Account -->
+          <li class="sign_in nav-item">
+            <a class="nav-link d-flex p-1 text-reset" href="">
+              <img src="icons/Account.svg" alt="Location Icon" />
+              <p class="account mt-3 ms-2">
+                Sign in <br />
+                <span class="account text-dark fw-bold">Account</span>
+              </p>
+            </a>
+          </li>
+          <!-- Wishlist -->
+          <li class="nav-item ms-3">
+            <a href="" class="nav-link p-0"
+              ><img src="icons/wishlist.svg" alt=""
+            /></a>
+          </li>
+          <!-- Shopping cart-->
+          <li class="nav-item ms-2">
+            <a class="nav-link" href=""
+              ><img src="icons/shopping cart.svg" alt=" Shopping Cart Icon"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+      <!-- Sidebar Menu -->
+      <div class="home_bar navbar navbar-expand-lg p-0">
+        <div class="all_cat d-flex me-3">
+          <a href="" class="text-decoration-none me-5 m-2" id="dropdown"
+            ><img class="ms-2 me-2" src="icons/All cate.svg" alt="" />All
+            categories
+          </a>
+          <img class="pt-2 ms-3" src="icons/arrow_down.svg" alt="" />
+        </div>
+        <!--Home bar -->
+        <ul class="navbar-nav">
+          <li class="nav-item mx-3">
+            <a class="nav-link active" href="#">Home</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#">Leaflet</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#">Clubcard</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+          <li class="nav-item mx-2">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+          <li class="sale nav-item">
+            <a class="nav-link text-danger fw-bold" href="#">
+              Almost Finished <span class="badge bg-danger">SALE</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+
       <!--Hero section-->
-      <!--Sidebar- All categories-->
-      <!--Home bar- -->
       <!--Slide-->
+      <div class="hero d-flex">
+        <div class="cat_list">
+          <ul class="list-unstyled">
+            <li class="d-flex align-items-center">
+              <a class="text-decoration-none text-reset p-2" href="">
+                <img class="ms-2 me-2" src="icons/F&V.svg" alt="" />Fruits &
+                Vegetables</a
+              >
+            </li>
+            <li class="dropend d-flex align-items-center">
+              <a
+                class="dropdown-toggle text-decoration-none text-reset p-2"
+                href="#"
+                role="button"
+                id="dropdownMenuLink"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <img class="ms-2 me-2" src="icons/M&S.svg" alt="" /> Meat & Fish
+                <span class="dropdown_arrow">
+                  <img src="icons/arrow_rigth.svg" alt=""
+                /></span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <li><a class="dropdown-item" href="#">Beef</a></li>
+                <li><a class="dropdown-item" href="#">Chicken</a></li>
+                <li><a class="dropdown-item" href="#">Seafood</a></li>
+              </ul>
+            </li>
+            <li class="d-flex align-items-center">
+              <a class="text-decoration-none text-reset p-2" href="">
+                <img class="ms-2 me-2" src="icons/frozen.svg" alt="" /> Frozen
+                Food</a
+              >
+            </li>
+            <li class="d-flex align-items-center">
+              <a class="text-decoration-none text-reset p-2" href=""
+                ><img class="ms-2 me-2" src="icons/Dairy.svg" alt="" /> Dairy</a
+              >
+            </li>
+            <li class="d-flex align-items-center">
+              <a class="text-decoration-none text-reset p-2" href="">
+                <img class="ms-2 me-2" src="icons/bakery.svg" alt="" />Bakery</a
+              >
+            </li>
+            <li class="d-flex align-items-center">
+              <a class="text-decoration-none text-reset p-2" href="">
+                <img class="ms-2 me-2" src="icons/snacks.svg" alt="" /> Biscuits
+                & Snacks</a
+              >
+            </li>
+            <li class="d-flex align-items-center">
+              <a class="text-decoration-none text-reset p-2" href=""
+                ><img class="ms-2 me-2" src="icons/drinks.svg" alt="" /> Drinks
+              </a>
+            </li>
+            <li class="d-flex align-items-center">
+              <a class="text-decoration-none text-reset p-2" href="">
+                <img class="ms-2 me-2" src="icons/toys.svg" alt="" />Babies
+              </a>
+            </li>
+            <li class="d-flex align-items-center">
+              <a class="text-decoration-none text-reset p-2" href="">
+                <img class="ms-2 me-2" src="icons/beauty.svg" alt="" /> Health &
+                Beauty</a
+              >
+            </li>
+            <li class="d-flex align-items-center">
+              <a class="text-decoration-none text-reset p-2" href=""
+                ><img class="ms-2 me-2" src="icons/household.svg" alt="" />
+                Household & Cleaning
+              </a>
+            </li>
+            <li class="d-flex align-items-center">
+              <a class="text-decoration-none text-reset p-2" href=""
+                ><img class="ms-2 me-2" src="icons/pets.svg" alt="" /> Pet
+                Care</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!--Hero img -->
+        <div class="hero_img ms-4 mt-4 position-relative">
+          <div class="text_hero position-absolute m-4 p-4">
+            <p class="">Weekend discount</p>
+            <h1>
+              Get the best quality <br />
+              products at the lowest <br />
+              prices
+            </h1>
+            <h6 class="mb-4">
+              We have prepared special discounts for you on grocery <br />
+              products. Don't miss these opportunities...
+            </h6>
+            <div class="d-flex">
+              <button class="shop_nowbtn me-3">Shop Now</button>
+              <h4 class="new_price mb-0">
+                €27.99
+                <span class="old_price text-decoration-line-through"
+                  >€57.99</span
+                >
+                <br />
+                <span class="mini_text d-flex"
+                  >Don't miss this limited time offer.</span
+                >
+              </h4>
+            </div>
+          </div>
+
+          <img class="img-fluid" src="images/hero_img.jpg" alt="" />
+        </div>
+      </div>
+
       <!--Features - where highlight the features of the online store-->
+      <div class="features d-flex mt-3">
+        <img src="icons/pay_types.svg" alt="" />
+        <h6 class="ms-2 me-3">
+          Various payment types <br />
+          <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+        </h6>
+        <img src="icons/sales.svg" alt="" />
+        <h6 class="ms-2 me-3">
+          New stocks and sales <br />
+          <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+        </h6>
+        <img src="icons/Quality.svg" alt="" />
+        <h6 class="ms-2 me-3">
+          Quality assurance <br />
+          <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+        </h6>
+        <img src="icons/delivery.svg" alt="" />
+        <h6 class="ms-2">
+          Delivery in 1 hour <br />
+          <span>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+        </h6>
+      </div>
     </div>
   </body>
 </html>
