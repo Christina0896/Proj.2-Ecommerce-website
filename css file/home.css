@@ -54,7 +54,7 @@
 .home_bar a,
 .cat_list li {
   color: var(--text-color-1);
-  font-weight: 600;
+  font-weight: 400;
 }
 .all_cat {
   border: 1px solid rgba(229, 231, 235, 1);
@@ -117,7 +117,7 @@
 }
 .new_price {
   color: red;
-  font-weight: 600;
+  font-weight: 700;
 }
 .old_price {
   color: var(--text-color-1);
@@ -127,5 +127,11 @@
   margin-left: 6em;
 }
 .dropdown-toggle::after {
-  display: none !important; /* Hides the default Bootstrap dropdown arrow */
+  display: none !important;
+}
+/* Features */
+.features span {
+  color: var(--text-color-2);
+  font-weight: 400;
+  font-size: 13px;
 }
