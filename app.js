@@ -1,5 +1,5 @@
 //countdown top bar//
-const targetDate = new Date("Dec 31,2024,23:59:59").getTime();
+const targetDate = new Date("Dec 31,2025,23:59:59").getTime();
 
 const countdown = setInterval(() => {
   let currentDate = new Date().getTime();
